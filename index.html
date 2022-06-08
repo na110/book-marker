@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Marker</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+  <body class="bg-secondary">
+    <div class="container">
+      <div class="row d-block">
+        <div class="head my-5">
+          <h2 class="text-capitalize text-white-50">book marker</h2>
+        </div>
+
+        <!-- I N P U T S -->
+        <div
+          class="tinputs bg-black bg-opacity-50 text-white text-center text-capitalize border-top py-5"
+        >
+          <h3 class="my-4">book marker your favorite sites</h3>
+          <div class="form-groube">
+            <div class="w-75 m-auto">
+              <label for="siteName" class="mb-3">site name</label>
+              <input
+                type="text"
+                id="siteName"
+                class="form-control bg-dark mb-4 text-white"
+                placeholder="Bookmarker Name"
+              />
+              <label for="siteUrl" class="mb-3">site URL</label>
+              <input
+                type="text"
+                id="siteUrl"
+                class="form-control bg-dark mb-4 text-white"
+                placeholder="WebSite URL Name"
+              />
+              <p class="d-none text-warning" id="invalid">Don't Forget standard is <span class=" text-lowercase">"https://www.yoursite.com"</span></p>
+
+              <button class="btn btn-outline-info my-4" id="btnMain">Submit</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- O U T P U T S -->
+        <div class="outputs my-5 border-bottom py-4" id="outputs"></div>
+      </div>
+      <p class="text-white">© 2019 Bookmarker Inc.</p>
+    </div>
+    <script src="JS/main.js"></script>
+  </body>
+</html>
